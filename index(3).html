@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Title</title>
+</head>
+
+<body>
+  <script>
+    /*  str = prompt("Слово")
+        function countLetters(givenStr) {
+            let letters = "йцукенгшщзхъфывапролджэёячсмитьбю", count = 0;
+            for (i = 0; i < givenStr.length; i++)
+                for (j = 0; j < letters.length; j++)
+                    if (givenStr[i] == letters[j]) {
+                        count++;
+                        break;
+                    }
+            return count;
+        }
+        alert("Всего букв - " + countLetters(str));
+            
+            function countNumbers(givenStr) {
+                let numbers = "1234567890", count1 = 0;
+                for (i = 0; i < givenStr.length; i++)
+                    for (l = 0; l < numbers.length; l++)
+                        if (givenStr[i] == numbers[l]) {
+                            count1++;
+                            break;
+                        }
+                return count1;
+            }
+            alert("Всего цифр - " + countNumbers(str));
+                
+                function countSigns(givenStr) {
+                    let signs = "!@#№$%^,&.;*()-_+=", count2 = 0;
+                    for (i = 0; i < givenStr.length; i++)
+                        for (k = 0; k < signs.length; k++)
+                            if (givenStr[i] == signs[k]) {
+                                count2++;
+                                break;
+                            }
+                    return count2;
+                }
+                alert("Всего знаков - " + countSigns(str));
+                alert(count + count1 + count2)
+                */
+
+        /*
+        var arr1 = ["один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"];
+        var arr2 = [" ","двадцать","тридцать","сорок","пятьдесят","шестьдесят","семьдесят","восемьдесят","девяносто"]
+        var str = +prompt("Введите любое двух значное число")
+        var str1 = "";
+        switch(str){
+        case 10: alert("Десять");break;
+        case 11: alert("Одинадцать");break;  // решить промлебу с двойным выводом - 11 и 21 и тд + написать 20,30,40 и тд
+        case 12: alert("Двенадцать");break;
+        case 13: alert("Тренадцать");break;
+        case 14: alert("Четырнадцать");break;
+        case 15: alert("Пятнадцать");break;
+        case 16: alert("Шеснадцать");break;
+        case 17: alert("Семьнадцать");break;
+        case 18: alert("Восемьнадцать");break;
+        case 19: alert("Девятнадцать");break;
+        };
+        function numberToletter(arr1,arr2){
+        if(str < 10){
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = str)
+        var a = arr1[i] 
+        alert(a)
+        }
+        else
+        if (str < 29){  // проблема тут тк нужно указать другое равенство типо от 21 до
+        var b = Math.floor(str/10);
+        var c = str - b * 10;
+        if(b = 2)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        var d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        var e = arr1[i] 
+        alert(d+e);
+        }
+        else
+        if (str < 39){
+        b = Math.floor(str/10);
+        c = str - b * 10;
+        if(b = 3)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str < 49){
+        b = Math.floor(str/10);
+        c = str - b * 10;
+        if(b = 4)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str < 59){
+        b = Math.floor(str/10);
+        c = str - b * 10;
+        if(b = 5)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str < 69){
+        b = Math.floor(str/10);
+        c = str - b * 10;
+        if(b = 6)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str < 79){
+        b = Math.floor(str/10);
+        c = str - b * 10;
+        if(b = 7)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str < 89){
+        b = Math.floor(str/10);
+        c = str - b * 10;
+        if(b = 8)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str < 99){
+        b = Math.floor(str/10);
+        c = str - b * 10;
+        if(b = 9)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        } 
+        };
+        numberToletter(arr1,arr2);
+       
+      */
+
+
+      // задача 3 (проверить)
+       var str4 = prompt()
+      function changeLower(str4){
+      let sing2 = "-";
+      for(i=0; i < str4; i++)
+      for(j = 0; j < sing2.length; j++) // возможно лишнее действие т.к. знак всего один
+      if(str4[i] == sign2){ // возможно без итого эллемента sing2
+      var newStr = str4[i]+str4.toUpperCase;
+      alert(newStr);
+      };
+      }
+      changeLower(str4);
+
+
+
+
+    // задача 5. (проверить)
+      var str5 = prompt();
+      function checkUrl(str5){
+      var newStrProtocol = str4.location.protocol // window
+      alert(newStrProtocol)
+      }
+      checkUrl(str5);
+    // возможно нужно действие отдельное которое бы разграничевало две части слова первая чаасть до - а вторая после
+
+
+
+  function CustomSplit(str, delimiter, removeEmptyItems) { // возможно 6
+  if (!delimiter || delimiter.length === 0) return [str];
+  if (!str || str.length === 0) return [];
+  var result = [];
+  var j = 0;
+  var lastStart = 0;
+  for (var i=0;i<=str.length;) {
+    if (i == str.length || str.substr(i,delimiter.length) == delimiter)
+    {
+      if (!removeEmptyItems || lastStart != i)
+      {
+          result[j++] = str.substr(lastStart, i-lastStart);
+      }
+      lastStart = i+delimiter.length;
+      i += delimiter.length;    
+    } else i++;
+  }
+  return result;
+}
+
+  </script>
+</body>
+
+</html>
