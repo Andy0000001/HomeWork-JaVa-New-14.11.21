@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var count;
+        var count1;
+        var count2;
+        var str1 = prompt("Слово")
+        function countLetters(givenStr1) {
+            let letters = "йцукенгшщзхъфывапролджэёячсмитьбю", count = 0;
+            for (i = 0; i < givenStr1.length; i++)
+                for (j = 0; j < letters.length; j++)
+                    if (givenStr1[i] == letters[j]) {
+                        count++;
+                        break;
+                    }
+            return count;
+        }
+        alert("Всего букв - " + countLetters(str1));
+            
+            function countNumbers(givenStr1) {
+                let numbers = "1234567890", count1 = 0;
+                for (i = 0; i < givenStr1.length; i++)
+                    for (l = 0; l < numbers.length; l++)
+                        if (givenStr1[i] == numbers[l]) {
+                            count1++;
+                            break;
+                        }
+                return count1;
+            }
+            alert("Всего цифр - " + countNumbers(str1));
+                
+                function countSigns(givenStr1) {
+                    let signs = "!@#№$%^,&.;*()-_+=", count2 = 0;
+                    for (i = 0; i < givenStr1.length; i++)
+                        for (k = 0; k < signs.length; k++)
+                            if (givenStr1[i] == signs[k]) {
+                                count2++;
+                                break;
+                            }
+                    return count2;
+                }
+                alert("Всего знаков - " + countSigns(str1));
+                
+                
+
+        
+        var arr1 = ["один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"];
+        var arr2 = [" ","двадцать","тридцать","сорок","пятьдесят","шестьдесят","семьдесят","восемьдесят","девяносто"]
+        var str2 = +prompt("Введите любое двух значное число")
+        switch(str2){
+        case 10: alert("Десять");break;
+        case 11: alert("Одинадцать");break;  // решить промлебу с двойным выводом - 11 и 21 и тд + написать 20,30,40 и тд
+        case 12: alert("Двенадцать");break;
+        case 13: alert("Тренадцать");break;
+        case 14: alert("Четырнадцать");break;
+        case 15: alert("Пятнадцать");break;
+        case 16: alert("Шеснадцать");break;
+        case 17: alert("Семьнадцать");break;
+        case 18: alert("Восемьнадцать");break;
+        case 19: alert("Девятнадцать");break;
+        case 20: alert("Двадцать");break;
+        case 30: alert("Тридцать");break;  // решить промлебу с двойным выводом - 11 и 21 и тд + написать 20,30,40 и тд
+        case 40: alert("Сорок");break;
+        case 50: alert("Пятьдесят");break;
+        case 60: alert("Шестьдесят");break;
+        case 70: alert("Семьдесят");break;
+        case 80: alert("Восемьдесят");break;
+        case 90: alert("Девяносто");break;
+
+        };
+        function numberToletter(arr1,arr2){
+        if(str2 < 10){
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = str2)
+        var a = arr1[i] 
+        alert(a)
+        }
+        else
+        if (str2 >= 21 && str2 < 29){  // проблема тут тк нужно указать другое равенство типо от 21 до
+        var b = Math.floor(str2/10);
+        var c = str2 - b * 10;
+        if(b = 2)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        var d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        var e = arr1[i] 
+        alert(d+e);
+        }
+        else
+        if (str2 >= 31 && str2 < 39){
+        b = Math.floor(str2/10);
+        c = str2 - b * 10;
+        if(b = 3)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str2 >= 41 && str2 < 49){
+        b = Math.floor(str2/10);
+        c = str2 - b * 10;
+        if(b = 4)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str2 >= 51 && str2 < 59){
+        b = Math.floor(str2/10);
+        c = str2 - b * 10;
+        if(b = 5)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str2 >= 61 && str2 < 69){
+        b = Math.floor(str2/10);
+        c = str2 - b * 10;
+        if(b = 6)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str2 >= 71 && str2 < 79){
+        b = Math.floor(str2/10);
+        c = str2 - b * 10;
+        if(b = 7)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str2 >= 81 && str2 < 89){
+        b = Math.floor(str2/10);
+        c = str2 - b * 10;
+        if(b = 8)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        }
+        else
+        if (str2 >= 91 && str2 < 99){
+        b = Math.floor(str2/10);
+        c = str2 - b * 10;
+        if(b = 9)
+        for (i = 0; i < arr2.length; i++)
+        if (arr2.length = b)
+        d = arr2[i] 
+        for (i = 0; i < arr1.length; i++)
+        if (arr1.length = c)
+        e = arr1[i];
+        alert(d+e);
+        } 
+        };
+        numberToletter(arr1,arr2);
+       
+      
+
+
+      // задача 3                
+      var arr5 = [];
+      var str4 = prompt();
+      function changeLower(str4,arr5){
+      var sing2 = str4.split("-");
+      arr5 = sing2
+      var newStr = arr5[0] + arr5[1].charAt(0).toUpperCase() + arr5[1].substring(1)
+      alert(newStr);
+      };
+      changeLower(str4);
+
+
+
+      // задача 4      // не совсем понял задание
+    var str5 = prompt();
+    var arr6 = [];
+    function unionString(str5,arr6){
+     arr6.push(str5);
+    };
+    unionString(str5,arr6)
+    alert(arr6);
+
+
+
+
+ // задача 5.
+   var url = prompt()
+   function showUrl(url) {
+    let arr3;
+    let protocol;
+    let domain;
+    let arr4;
+    let way;
+    arr3 = url.split("://");
+    for (let i = 0; i < arr3.length; i++) {
+        protocol = arr1[0];
+        arr4 = arr3[1].split("/"); 
+        domain = arr4[0];
+    }   
+    arr4.shift();
+    way = arr4.join("/");      
+          
+    
+return alert("Информация\nпротокол: "+ protocol
+        + "\nдомен: " + domain + "\nпуть: " + way);
+}
+showUrl(url)
+    
+    </script>
+
+</body>
+
+</html>
